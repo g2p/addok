@@ -49,6 +49,12 @@ call = "addok.bin:main"
 # Addok uses pkg_resources to look for plugins
 site_packages = true
 
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "-e file:///${PROJECT_ROOT}/../addok-france#egg=addok-france",
+    "-e file:///${PROJECT_ROOT}/../addok-fr#egg=addok-fr",
+]
 [project.entry-points.pytest11]
 addok = "addok.pytest"
 

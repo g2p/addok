@@ -2,11 +2,31 @@
 # It is not intended for manual editing.
 
 [metadata]
-groups = ["default"]
+groups = ["default", "dev"]
 cross_platform = true
 static_urls = false
 lock_version = "4.3"
-content_hash = "sha256:e61cc3835df2ea93861ff762bc5dc065adadc7a720a93d21f04b60b8a7e95e53"
+content_hash = "sha256:b3a1ef2f4818c8f3637a7050d25b936d5cfd6569f96823230604f844b3f1b837"
+
+[[package]]
+name = "addok-fr"
+version = "1.0.1"
+editable = true
+path = "../addok-fr"
+summary = "Add French specific string processors."
+dependencies = [
+    "addok",
+]
+
+[[package]]
+name = "addok-france"
+version = "1.1.3"
+editable = true
+path = "../addok-france"
+summary = "Add France specific string processors."
+dependencies = [
+    "addok",
+]
 
 [[package]]
 name = "async-timeout"
