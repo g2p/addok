@@ -44,8 +44,10 @@ docs = [
     "mkdocs",
 ]
 
-[project.scripts]
-addok = "addok.bin:main"
+[tool.pdm.scripts.addok]
+call = "addok.bin:main"
+# Addok uses pkg_resources to look for plugins
+site_packages = true
 
 [project.entry-points.pytest11]
 addok = "addok.pytest"
