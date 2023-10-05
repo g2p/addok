@@ -54,6 +54,7 @@ site_packages = true
 dev = [
     "-e file:///${PROJECT_ROOT}/../addok-france#egg=addok-france",
     "-e file:///${PROJECT_ROOT}/../addok-fr#egg=addok-fr",
+    "-e file:///${PROJECT_ROOT}/../addok-sqlite-store#egg=addok-sqlite-store",
 ]
 [project.entry-points.pytest11]
 addok = "addok.pytest"

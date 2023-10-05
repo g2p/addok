@@ -6,7 +6,7 @@ groups = ["default", "dev"]
 cross_platform = true
 static_urls = false
 lock_version = "4.3"
-content_hash = "sha256:b3a1ef2f4818c8f3637a7050d25b936d5cfd6569f96823230604f844b3f1b837"
+content_hash = "sha256:355b4611a910e56155a0431c8bf77f3956a4027d174bca4be409587944ff0d73"
 
 [[package]]
 name = "addok-fr"
@@ -27,6 +27,13 @@ summary = "Add France specific string processors."
 dependencies = [
     "addok",
 ]
+
+[[package]]
+name = "addok-sqlite-store"
+version = "1.0.1"
+editable = true
+path = "../addok-sqlite-store"
+summary = "Store documents in Sqlite."
 
 [[package]]
 name = "async-timeout"
